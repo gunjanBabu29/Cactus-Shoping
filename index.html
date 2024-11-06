@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cactus Shop - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">🌵 CACTUS BAZAR</div>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Bring Home Your Perfect Cactus</h1>
+    <p>Discover unique cacti to brighten up your home</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="section">
+    <h2>Our Cactus Collection</h2>
+    <div class="product-card">
+      <img src="cac1.png" alt="Golden Barrel Cactus">
+      <h3>Golden Barrel Cactus</h3>
+      <p class="price">₹299</p>
+    </div>
+    <div class="product-card">
+      <img src="cac2.png" alt="Christmas Cactus">
+      <h3>Christmas Cactus</h3>
+      <p class="price">₹399</p>
+    </div>
+    <div class="product-card">
+      <img src="cac3.png" alt="Bunny Ear Cactus">
+      <h3>Bunny Ear Cactus</h3>
+      <p class="price">₹249</p>
+    </div>
+    <!-- Add more product cards as needed -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>WhatsApp: +91 9334131985</p>
+      <p>Mobile: +91 9334131985</p>
+      <p>Email: <a href="mailto:gunjansingh9752@gmail.com">gunjansingh9752@gmail.com</a></p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
